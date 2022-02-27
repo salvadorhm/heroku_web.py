@@ -1,6 +1,6 @@
 # Heroku-Web.py-Git
 
-Web.py webapp sample with Heroku-Docker
+Web.py webapp sample with Heroku-Git and Gunicorn
 
 ***
 
