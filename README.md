@@ -122,6 +122,9 @@ set git remote heroku to https://git.heroku.com/WEBAPP_NAME.git
 
 ```bash
 $ heroku buildpacks:set heroku/python
+
+Buildpack set. Next release on webpygit will use heroku/python.
+Run git push heroku main to create a new release using this buildpack.
 ```
 
 ### 8. Add files to git
