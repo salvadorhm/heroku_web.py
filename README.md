@@ -10,7 +10,7 @@ Web.py webapp sample with Heroku-Git and Gunicorn
 
 ## 2. Gitpod for development
 
-1. Create and account in [GITPOD](https://gitpod.io) - Use Github credentials.
+1. Create and account in [gitpod.io](https://gitpod.io) - Use Github credentials.
 2. Copy the Github URL.
 3. Paste de Github URL in Gipod.
 
@@ -24,13 +24,11 @@ https://gitpod.io#GITHUB_REPO_URL
 
 ## Local development
 
-1. Copy and paste Dockerfile.
-2. Copy and paste heroku.yml
-3. Create webapp/ copy and paste all files [app.py, requirements.txt, wsgi.py, templates/, base.html, index.html]
+1. Copy and paste all files [app.py, requirements.txt, Procfile, runtime.txt, views/, layout.html, index.html]
 
 ### 1. Install libraries
 
-Open webapp/ and run the next commands.
+Open terminal and run the next commands.
 
 ```bash
 $ pip3 install -r requirements.txt
