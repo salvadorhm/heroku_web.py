@@ -118,6 +118,83 @@ $ heroku git:remote -a WEBAPP_NAME
 set git remote heroku to https://git.heroku.com/WEBAPP_NAME.git
 ```
 
+### 7. Config Heroku buildpack -> Python
 
-heroku buildpacks:set heroku/python
+```bash
+$ heroku buildpacks:set heroku/python
+```
 
+### 8. Add files to git
+
+```bash
+$ git add .
+
+$
+```
+
+### 9. Commit changes
+
+```bash
+$ git commit -m "Basic schema"
+
+[main d4aaf89] Basic schema
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+```
+
+### 10. Push changes to GitHub
+
+```bash
+$ git push -u origin main
+
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 290 bytes | 290.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/GITHUB_USER/REPO_NAME.py.git
+   d54f035..d4aaf89  main -> main
+branch 'main' set up to track 'origin/main'.
+```
+
+### 11. Pushh changes to Heroku
+
+```bash
+$ git push heroku main
+
+Enumerating objects: 30, done.
+Counting objects: 100% (30/30), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (21/21), done.
+Writing objects: 100% (30/30), 4.35 KiB | 4.35 MiB/s, done.
+Total 30 (delta 4), reused 3 (delta 0), pack-reused 0
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Building on the Heroku-20 stack
+...
+remote: Verifying deploy... done.
+To https://git.heroku.com/APP_NAME.git
+ * [new branch]      main -> main
+```
+
+### 12. Open Web Browser
+
+```bash
+$ heroku open
+
+* OPEN WEB BROWSER
+```
+
+### 13. Install heroku cli
+
+```bash
+$ heroku logs --tail
+
+2022-02-27T19:53:50.466499+00:00 app[api]: Release v1 created by user heroku_user@gmail.com
+2022-02-27T19:53:50.466499+00:00 app[api]: Initial release by user heroku_user@gmail.com
+2022-02-27T19:53:50.696294+00:00 app[api]: Enable Logplex by user heroku_user@gmail.com
+2022-02-27T19:53:50.696294+00:00 app[api]: Release v2 created by user heroku_user@gmail.com
+2022-02-27T19:57:28.000000+00:00 app[api]: Build started by user heroku_user@gmail.com
+```
