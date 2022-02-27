@@ -1,1 +1,1 @@
-web: python3 app.py $PORT
+web: gunicorn --bind 0.0.0.0:8080 app:wsgiapp
