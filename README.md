@@ -158,7 +158,7 @@ To https://github.com/GITHUB_USER/REPO_NAME.py.git
 branch 'main' set up to track 'origin/main'.
 ```
 
-### 11. Pushh changes to Heroku
+### 11. Push changes to Heroku
 
 ```bash
 $ git push heroku main
@@ -187,7 +187,7 @@ $ heroku open
 * OPEN WEB BROWSER
 ```
 
-### 13. Install heroku cli
+### 13. Connect to heroku for logs view
 
 ```bash
 $ heroku logs --tail
